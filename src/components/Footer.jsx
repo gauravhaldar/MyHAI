@@ -71,6 +71,14 @@ export default function Footer({ onPrivacyClick }) {
                   <a href={link.href}>{link.label}</a>
                 </li>
               ))}
+              <li>
+                <button 
+                  onClick={onPrivacyClick}
+                  className="footer__privacy-btn"
+                >
+                  Privacy Policy
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -100,15 +108,8 @@ export default function Footer({ onPrivacyClick }) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="footer__bottom" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
+        <div className="footer__bottom" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
           <p>© 2026 Haldar AI and IT Private Limited. All rights reserved.</p>
-          <button 
-            onClick={onPrivacyClick} 
-            className="footer__privacy-link"
-            style={{ background: 'none', border: 'none', color: 'rgba(255, 255, 255, 0.5)', textDecoration: 'underline', cursor: 'pointer', fontFamily: 'inherit', fontSize: '14px', padding: '0' }}
-          >
-            Privacy Policy
-          </button>
         </div>
       </div>
     </footer>

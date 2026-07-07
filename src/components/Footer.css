@@ -110,3 +110,18 @@
     align-items: center;
   }
 }
+
+.footer__privacy-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.footer__privacy-btn:hover {
+  color: var(--color-secondary);
+}
