@@ -220,10 +220,11 @@
 }
 
 .app-form__selected-flag {
-  height: 18px;
-  width: auto;
+  width: 24px;
+  height: 16px;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  object-fit: cover;
 }
 
 .app-form__arrow {
@@ -325,9 +326,10 @@
 }
 
 .app-form__dropdown-flag {
-  height: 12px;
-  width: auto;
+  width: 20px;
+  height: 14px;
   border-radius: 1px;
+  object-fit: cover;
 }
 
 .app-form__dropdown-country-name {

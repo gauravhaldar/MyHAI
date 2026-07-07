@@ -5,13 +5,21 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Hero.css';
 import haiLogo from '../assets/hailogo.png';
+import leftLaurel from '../assets/left-gold-laurel.webp';
+import rightLaurel from '../assets/right-gold-laurel.webp';
+import clutchGold from '../assets/clutch-gold.webp';
+import slide1 from '../assets/pro1-tinified.webp';
+import slide2 from '../assets/pro2-tinified.webp';
+import slide3 from '../assets/pro3-tinified.webp';
+import slide4 from '../assets/pro4-tinified.webp';
+import slide5 from '../assets/pro5-tinified.webp';
 
 const slides = [
-  { src: 'https://thefreewebsiteguys.com/wp-content/uploads/2025/09/pro1-tinified.webp', alt: 'Professional website example 1' },
-  { src: 'https://thefreewebsiteguys.com/wp-content/uploads/2025/09/Screenshot-2023-02-12-171703-e1676244150164-tinified.webp', alt: 'Professional website example 2' },
-  { src: 'https://thefreewebsiteguys.com/wp-content/uploads/2025/09/Femmepats-e1676071109294-tinified.webp', alt: 'Femmepats website example' },
-  { src: 'https://thefreewebsiteguys.com/wp-content/uploads/2025/09/optimate.co_-e1676528979464-tinified.webp', alt: 'Optimate website example' },
-  { src: 'https://thefreewebsiteguys.com/wp-content/uploads/2025/09/17-Majik-of-life-e1676071068148-tinified.webp', alt: 'Majik of Life website example' },
+  { src: slide1, alt: 'Professional website example 1' },
+  { src: slide2, alt: 'Professional website example 2' },
+  { src: slide3, alt: 'Femmepats website example' },
+  { src: slide4, alt: 'Optimate website example' },
+  { src: slide5, alt: 'Majik of Life website example' },
 ];
 
 export default function Hero({ onApplyClick }) {
@@ -29,10 +37,11 @@ export default function Hero({ onApplyClick }) {
         {/* Rating Badge */}
         <div className="hero__rating">
           <img
-            src="https://thefreewebsiteguys.com/wp-content/uploads/2025/09/left-gold-laurel-1.webp"
+            src={leftLaurel}
             alt=""
             className="hero__laurel"
             width="35"
+            fetchpriority="high"
           />
           <div className="hero__rating-content">
             <a
@@ -60,19 +69,21 @@ export default function Hero({ onApplyClick }) {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://thefreewebsiteguys.com/wp-content/uploads/2025/09/clutch.webp"
+                  src={clutchGold}
                   alt="Clutch"
                   width="40"
                   className="hero__clutch-logo"
+                  fetchpriority="high"
                 />
               </a>
             </div>
           </div>
           <img
-            src="https://thefreewebsiteguys.com/wp-content/uploads/2025/09/right-gold-laurel-1.webp"
+            src={rightLaurel}
             alt=""
             className="hero__laurel"
             width="35"
+            fetchpriority="high"
           />
         </div>
 

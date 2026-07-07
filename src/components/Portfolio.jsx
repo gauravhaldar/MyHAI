@@ -1,23 +1,27 @@
 import './Portfolio.css';
+import ursulaDesktop from '../assets/ursula-desktop.png';
+import decorezDesktop from '../assets/decorez-desktop.png';
+import femmepatsLaptop from '../assets/femmepats-laptop.png';
+import optimateLaptop from '../assets/optimate-laptop.png';
 
 const examples = [
   {
-    src: 'https://thefreewebsiteguys.com/wp-content/uploads/2023/02/Ursula-desktop-example.png',
+    src: ursulaDesktop,
     alt: 'Ursula Wastian - Desktop website example',
     name: 'Ursula Wastian',
   },
   {
-    src: 'https://thefreewebsiteguys.com/wp-content/uploads/2023/02/Decorez-desktop-example.png',
+    src: decorezDesktop,
     alt: 'Decorez - Desktop website example',
     name: 'Decorez',
   },
   {
-    src: 'https://thefreewebsiteguys.com/wp-content/uploads/2023/02/Femmepats-laptop-example.png',
+    src: femmepatsLaptop,
     alt: 'Femmepats - Laptop website example',
     name: 'Femmepats',
   },
   {
-    src: 'https://thefreewebsiteguys.com/wp-content/uploads/2023/02/Optimate-laptop-example.png',
+    src: optimateLaptop,
     alt: 'Optimate - Laptop website example',
     name: 'Optimate',
   },

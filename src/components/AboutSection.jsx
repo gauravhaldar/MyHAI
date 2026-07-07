@@ -1,4 +1,6 @@
 import './AboutSection.css';
+import optimateDesktop from '../assets/optimate-desktop.png';
+import topRatedBadge from '../assets/top-rated-badge.png';
 
 export default function AboutSection({ onApplyClick }) {
   return (
@@ -9,15 +11,17 @@ export default function AboutSection({ onApplyClick }) {
           <div className="about__image-col">
             <div className="about__image-wrapper">
               <img
-                src="https://thefreewebsiteguys.com/wp-content/uploads/2023/02/Optimate-desktop-example.png"
+                src={optimateDesktop}
                 alt="Professional website example"
                 className="about__screenshot"
+                loading="lazy"
               />
               <div className="about__badge">
                 <img
-                  src="https://thefreewebsiteguys.com/wp-content/uploads/2023/10/2023_thefreewebsiteguys-03-1.png"
+                  src={topRatedBadge}
                   alt="Award badge - 5.0 out of 5"
                   className="about__badge-img"
+                  loading="lazy"
                 />
                 <p className="about__badge-text">5.0 out of 5</p>
               </div>

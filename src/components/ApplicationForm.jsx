@@ -270,7 +270,7 @@ export default function ApplicationForm({ onClose }) {
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 >
                   <img
-                    src={`https://flagcdn.com/w40/${selectedCountry.flagClassCode}.png`}
+                    src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/${selectedCountry.flagClassCode.toLowerCase()}.svg`}
                     alt={selectedCountry.name}
                     className="app-form__selected-flag"
                   />
@@ -315,7 +315,7 @@ export default function ApplicationForm({ onClose }) {
                             }}
                           >
                             <img
-                              src={`https://flagcdn.com/w20/${c.flagClassCode}.png`}
+                              src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/${c.flagClassCode.toLowerCase()}.svg`}
                               alt={c.name}
                               className="app-form__dropdown-flag"
                             />
