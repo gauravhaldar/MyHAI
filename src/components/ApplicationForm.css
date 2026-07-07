@@ -39,6 +39,10 @@
 }
 
 /* Right Section Branding */
+.app-form__mobile-branding {
+  display: none;
+}
+
 .app-form__right-branding {
   position: absolute;
   top: 30px;
@@ -529,6 +533,8 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     border-radius: 0;
   }
 
@@ -542,7 +548,35 @@
 
   .app-form__left {
     flex: 1;
-    padding: 30px 20px;
+    padding: 30px 24px 90px;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .app-form__mobile-branding {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .app-form__mobile-logo-img {
+    height: 24px;
+    width: auto;
+  }
+  
+  .app-form__mobile-branding .myhai-logo__text {
+    font-size: 22px;
+    color: var(--color-dark);
+  }
+  
+  .app-form__mobile-branding .myhai-logo__text span {
+    color: var(--color-primary);
+  }
+
+  .app-form__dropdown-menu {
+    max-width: calc(100vw - 48px);
   }
   
   .app-form__question-text {

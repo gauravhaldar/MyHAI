@@ -191,6 +191,10 @@ export default function ApplicationForm({ onClose }) {
     <div className="app-form">
       {/* Left Column: Form Section */}
       <div className="app-form__left">
+        <div className="app-form__mobile-branding">
+          <img src={haiLogo} alt="MyHAI Logo" className="app-form__mobile-logo-img" />
+          <span className="myhai-logo__text">MY<span>HAI</span></span>
+        </div>
         <div className="app-form__content">
           
           {step === 1 && (
