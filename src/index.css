@@ -1,5 +1,5 @@
 /* ==========================================
-   GLOBAL STYLES — The Free Website Guys
+   GLOBAL STYLES — MYHAI
    ========================================== */
 
 /* CSS Variables */
@@ -159,9 +159,15 @@ p {
 .myhai-logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   text-decoration: none;
   font-family: var(--font-heading);
+}
+
+.myhai-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
 }
 
 .myhai-logo__circle {
@@ -183,12 +189,14 @@ p {
 }
 
 .myhai-logo__text {
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 700;
   color: var(--color-white);
   letter-spacing: 0.02em;
   line-height: 1;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
 }
 
 .myhai-logo__text span {

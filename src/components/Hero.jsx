@@ -4,6 +4,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './Hero.css';
+import haiLogo from '../assets/hailogo.png';
 
 const slides = [
   { src: 'https://thefreewebsiteguys.com/wp-content/uploads/2025/09/pro1-tinified.webp', alt: 'Professional website example 1' },
@@ -20,7 +21,8 @@ export default function Hero({ onApplyClick }) {
         {/* Logo */}
         <div className="hero__logo">
           <a href="#" className="myhai-logo">
-            <span className="myhai-logo__text">My<span>HAI</span></span>
+            <img src={haiLogo} alt="MyHAI Logo" className="myhai-logo-img" />
+            <span className="myhai-logo__text">MY<span>HAI</span></span>
           </a>
         </div>
 
