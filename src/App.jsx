@@ -12,9 +12,12 @@ import Portfolio from './components/Portfolio';
 import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
+import FaqSection from './components/FaqSection';
+import PrivacyPolicyModal from './components/PrivacyPolicyModal';
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [privacyOpen, setPrivacyOpen] = useState(false);
 
   const handleApplyClick = useCallback(() => {
     setModalOpen(true);
@@ -22,6 +25,14 @@ export default function App() {
 
   const handleCloseModal = useCallback(() => {
     setModalOpen(false);
+  }, []);
+
+  const handlePrivacyClick = useCallback(() => {
+    setPrivacyOpen(true);
+  }, []);
+
+  const handleClosePrivacy = useCallback(() => {
+    setPrivacyOpen(false);
   }, []);
 
   return (
@@ -35,13 +46,19 @@ export default function App() {
       <RatingsSection />
       <TestimonialsSection />
       <HowItWorks onApplyClick={handleApplyClick} />
+      <FaqSection />
       <Portfolio />
       <CtaSection onApplyClick={handleApplyClick} />
-      <Footer />
+      <Footer onPrivacyClick={handlePrivacyClick} />
 
       <Modal
         isOpen={modalOpen}
         onClose={handleCloseModal}
+      />
+
+      <PrivacyPolicyModal
+        isOpen={privacyOpen}
+        onClose={handleClosePrivacy}
       />
     </>
   );

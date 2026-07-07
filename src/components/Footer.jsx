@@ -32,7 +32,7 @@ const socialLinks = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ onPrivacyClick }) {
   return (
     <footer className="footer" id="footer">
       <div className="container">
@@ -100,8 +100,15 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="footer__bottom">
+        <div className="footer__bottom" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
           <p>© 2026 Haldar AI. All rights reserved.</p>
+          <button 
+            onClick={onPrivacyClick} 
+            className="footer__privacy-link"
+            style={{ background: 'none', border: 'none', color: 'rgba(255, 255, 255, 0.5)', textDecoration: 'underline', cursor: 'pointer', fontFamily: 'inherit', fontSize: '14px', padding: '0' }}
+          >
+            Privacy Policy
+          </button>
         </div>
       </div>
     </footer>

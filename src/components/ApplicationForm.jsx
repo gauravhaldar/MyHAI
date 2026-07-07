@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import './ApplicationForm.css';
 import haiLogo from '../assets/hailogo.png';
 import { countries } from './countries';
+import { GOOGLE_SHEETS_URL } from './data';
 
 const testimonials = [
   {
@@ -136,19 +137,16 @@ export default function ApplicationForm({ onClose }) {
     };
 
     try {
-      const response = await fetch('https://fwg-apply-form-api.vercel.app/api/applyform/paste', {
+      await fetch(GOOGLE_SHEETS_URL, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ application: payload })
       });
 
-      if (response.ok) {
-        setStep(6); // Thank You step
-      } else {
-        setError('Something went wrong during submission. Please try again.');
-      }
+      setStep(6); // Thank You step
     } catch (err) {
       setError('Connection error. Please check your internet connection.');
     } finally {
