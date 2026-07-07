@@ -31,7 +31,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }) {
           <p className="policy-modal-meta">Last updated: January 2026</p>
           
           <p>
-            At <strong>Haldar AI</strong> (operating as <strong>MYHAI</strong>), accessible from{' '}
+            At <strong>Haldar AI and IT Private Limited</strong> (operating as <strong>MYHAI</strong>), accessible from{' '}
             <a href="https://www.myhai.in/">https://www.myhai.in/</a>, we take your privacy seriously. This Privacy
             Policy document outlines the types of personal information collected, how we use it, and your rights
             related to that data.
@@ -46,7 +46,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }) {
           <p>
             This Privacy Policy applies to all personal data collected through our website, contact forms,
             application forms, and associated online tools. It does not apply to any offline data collection or
-            third-party platforms not directly controlled by Haldar AI.
+            third-party platforms not directly controlled by Haldar AI and IT Private Limited.
           </p>
 
           <h2>2. Information We Collect</h2>
@@ -105,7 +105,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }) {
             If you have questions, complaints, or request deletion of your stored records, please reach out:
           </p>
           <div className="policy-modal-contact-card">
-            <p><strong>Haldar AI (MYHAI)</strong></p>
+            <p><strong>Haldar AI and IT Private Limited (MYHAI)</strong></p>
             <p>Address: Vyalikaval HBCS Layout, Nagavara, Bengaluru, Karnataka 560045</p>
             <p>Email: <a href="mailto:info@myhai.in">info@myhai.in</a> / <a href="mailto:haldarainait@gmail.com">haldarainait@gmail.com</a></p>
             <p>Phone: +91 81053 20657</p>

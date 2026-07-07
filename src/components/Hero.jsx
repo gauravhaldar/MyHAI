@@ -91,7 +91,7 @@ export default function Hero({ onApplyClick }) {
         <h1 className="hero__title">
           Get a professional website <span className="hero__highlight">for free</span> and
           <br />
-          jumpstart your Indian business.
+          {" "}jumpstart your Indian business.
         </h1>
 
         {/* CTA Button */}

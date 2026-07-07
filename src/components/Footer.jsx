@@ -101,7 +101,7 @@ export default function Footer({ onPrivacyClick }) {
 
         {/* Bottom Bar */}
         <div className="footer__bottom" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
-          <p>© 2026 Haldar AI. All rights reserved.</p>
+          <p>© 2026 Haldar AI and IT Private Limited. All rights reserved.</p>
           <button 
             onClick={onPrivacyClick} 
             className="footer__privacy-link"
