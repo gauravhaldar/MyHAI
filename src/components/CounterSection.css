@@ -10,7 +10,7 @@
 }
 
 .counters__item {
-  text-align: left;
+  text-align: center;
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   width: 60px;
   height: 4px;
   background: var(--color-primary);
-  margin-top: 12px;
+  margin: 12px auto 0;
   border-radius: 2px;
 }
 
