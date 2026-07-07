@@ -1,0 +1,570 @@
+.app-form {
+  display: flex;
+  height: 600px;
+  width: 1100px;
+  max-width: 95vw;
+  max-height: 90vh;
+  background: var(--color-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  font-family: var(--font-body);
+  position: relative;
+}
+
+.app-form__left {
+  flex: 1.2;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-white);
+}
+
+.app-form__middle-separator {
+  width: 1px;
+  height: 70%;
+  background: rgba(149, 90, 232, 0.2);
+  align-self: center;
+}
+
+.app-form__right {
+  flex: 0.8;
+  padding: 60px 80px;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Right Section Branding */
+.app-form__right-branding {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-form__right-logo {
+  height: 24px;
+  width: auto;
+}
+
+.app-form__right-branding .myhai-logo__text {
+  font-size: 22px;
+  color: var(--color-dark);
+}
+
+.app-form__right-branding .myhai-logo__text span {
+  color: var(--color-primary);
+}
+
+/* Success Step */
+.app-form__success {
+  width: 500px;
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.app-form__success-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.app-form__success-logo .myhai-logo__text span {
+  color: var(--color-primary);
+}
+
+.app-form__success-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(35, 164, 85, 0.1);
+  color: var(--color-green);
+  font-size: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.app-form__success h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.app-form__success p {
+  color: var(--color-text-light);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Step Container */
+.app-form__step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeInStep 0.3s ease;
+}
+
+@keyframes fadeInStep {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.app-form__question-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.app-form__step-number {
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+.app-form__question-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-dark);
+  line-height: 1.4;
+}
+
+.app-form__question-sub {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-top: -12px;
+  line-height: 1.5;
+}
+
+.app-form__required {
+  color: #ff4d4d;
+}
+
+/* Form inputs */
+.app-form__textarea {
+  border: none;
+  border-bottom: 2px solid rgba(149, 90, 232, 0.15);
+  font-size: 24px;
+  padding: 10px 0;
+  color: var(--color-dark);
+  font-family: inherit;
+  outline: none;
+  resize: none;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.app-form__textarea:focus,
+.app-form__input:focus {
+  border-color: var(--color-primary);
+}
+
+.app-form__input {
+  border: none;
+  border-bottom: 2px solid rgba(149, 90, 232, 0.15);
+  font-size: 24px;
+  padding: 10px 0;
+  color: var(--color-dark);
+  font-family: inherit;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+/* Phone input field with custom flag trigger */
+.app-form__phone-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(149, 90, 232, 0.15);
+  width: 100%;
+  max-width: 420px;
+  padding: 4px 0;
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+.app-form__phone-wrapper:focus-within {
+  border-color: var(--color-primary);
+}
+
+.app-form__flag-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.app-form__flag-trigger:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.app-form__selected-flag {
+  height: 18px;
+  width: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.app-form__arrow {
+  font-size: 9px;
+  color: var(--color-text-light);
+}
+
+.app-form__phone-separator {
+  width: 1px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 0 14px;
+}
+
+.app-form__phone-input {
+  border: none !important;
+  font-size: 24px;
+  outline: none;
+  flex: 1;
+  padding: 6px 0;
+  background: transparent;
+}
+
+/* Backdrop for dropdown outside click */
+.app-form__dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: transparent;
+}
+
+/* Dropdown styling */
+.app-form__dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 320px;
+  max-height: 280px;
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideDownDropdown 0.2s ease;
+}
+
+@keyframes slideDownDropdown {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.app-form__country-search {
+  padding: 12px 16px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  background: var(--color-light-bg);
+}
+
+.app-form__country-list {
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form__country-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+}
+
+.app-form__country-option:hover {
+  background: rgba(149, 90, 232, 0.05);
+}
+
+.app-form__country-option--selected {
+  background: rgba(149, 90, 232, 0.08);
+  font-weight: 600;
+}
+
+.app-form__dropdown-flag {
+  height: 12px;
+  width: auto;
+  border-radius: 1px;
+}
+
+.app-form__dropdown-country-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-dark);
+}
+
+.app-form__dropdown-country-code {
+  color: var(--color-text-light);
+  font-size: 13px;
+}
+
+.app-form__no-countries {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.app-form__hint {
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-top: 4px;
+}
+
+.app-form__hint strong {
+  color: var(--color-dark);
+}
+
+.app-form__error-message {
+  color: #ff4d4d;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  background: rgba(255, 77, 77, 0.08);
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+/* Hosting Select Options */
+.app-form__hosting-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.app-form__option-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  border: 1px solid rgba(149, 90, 232, 0.3);
+  border-radius: 6px;
+  background: rgba(149, 90, 232, 0.05);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.app-form__option-btn:hover {
+  border-color: var(--color-primary);
+  background: rgba(149, 90, 232, 0.1);
+}
+
+.app-form__option-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(149, 90, 232, 0.3);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-primary);
+  background: rgba(149, 90, 232, 0.06);
+}
+
+.app-form__option-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.app-form__loading {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Yellow Navigation Indicator (Bottom Right) */
+.app-form__yellow-nav {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.app-form__yellow-nav-btn {
+  width: 42px;
+  height: 36px;
+  background: #fdb226;
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.app-form__yellow-nav-btn:hover:not(:disabled) {
+  background: #e09e20;
+}
+
+.app-form__yellow-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.app-form__ok-btn {
+  margin-top: 20px;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Right Testimonial styles */
+.app-form__testimonial-stars {
+  color: var(--color-secondary);
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.app-form__testimonial-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.app-form__testimonial-date {
+  font-size: 13px;
+  color: var(--color-text-light);
+}
+
+.app-form__testimonial-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-family: inherit;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.g2-icon-text {
+  color: #ff4900;
+  font-size: 18px;
+}
+
+.g2-number-text {
+  color: var(--color-dark);
+  font-size: 13px;
+}
+
+.app-form__testimonial-quote {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.app-form__testimonial-description {
+  font-size: 13px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 950px) {
+  .app-form {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .app-form__middle-separator {
+    display: none;
+  }
+
+  .app-form__right {
+    display: none;
+  }
+
+  .app-form__left {
+    flex: 1;
+    padding: 30px 20px;
+  }
+  
+  .app-form__question-text {
+    font-size: 18px;
+  }
+  
+  .app-form__textarea,
+  .app-form__input,
+  .app-form__phone-input {
+    font-size: 18px;
+  }
+
+  .app-form__success {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .app-form__yellow-nav {
+    bottom: 20px;
+    right: 20px;
+  }
+}

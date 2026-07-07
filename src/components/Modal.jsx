@@ -1,8 +1,8 @@
 import { useEffect, useCallback } from 'react';
 import './Modal.css';
-import haiLogo from '../assets/hailogo.png';
+import ApplicationForm from './ApplicationForm';
 
-export default function Modal({ isOpen, onClose, iframeSrc }) {
+export default function Modal({ isOpen, onClose }) {
   const handleKeyDown = useCallback((e) => {
     if (e.key === 'Escape') onClose();
   }, [onClose]);
@@ -26,22 +26,7 @@ export default function Modal({ isOpen, onClose, iframeSrc }) {
         <button className="modal-close" onClick={onClose} aria-label="Close modal">
           ×
         </button>
-        
-        {/* Modal Header Branding */}
-        <div className="modal-header-logo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', padding: '16px 0', borderBottom: '1px solid rgba(0,0,0,0.08)', background: 'var(--color-white)' }}>
-          <img src={haiLogo} alt="MyHAI Logo" style={{ height: '36px', width: 'auto' }} />
-          <span className="myhai-logo__text" style={{ fontSize: '28px', color: 'var(--color-dark)', textTransform: 'uppercase', fontWeight: '700', fontFamily: 'var(--font-heading)', letterSpacing: '0.02em', display: 'inline-flex', alignItems: 'center' }}>
-            MY<span style={{ color: 'var(--color-primary)' }}>HAI</span>
-          </span>
-        </div>
-
-        <iframe
-          src={iframeSrc}
-          title="Application Form"
-          className="modal-iframe"
-          frameBorder="0"
-          style={{ height: 'calc(100vh - 69px)' }}
-        />
+        <ApplicationForm onClose={onClose} />
       </div>
     </div>
   );

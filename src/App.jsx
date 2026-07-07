@@ -13,8 +13,6 @@ import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
 
-const FORM_URL = 'https://fwg-offer-form-frontend.vercel.app/';
-
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -44,7 +42,6 @@ export default function App() {
       <Modal
         isOpen={modalOpen}
         onClose={handleCloseModal}
-        iframeSrc={FORM_URL}
       />
     </>
   );
