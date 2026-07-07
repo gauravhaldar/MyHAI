@@ -311,11 +311,11 @@
   }
 
   .wewontcharge__circles-wrapper {
-    width: 374px;
-    height: 374px;
+    width: 440px;
+    height: 440px;
     transform: scale(0.85);
     transform-origin: center center;
-    margin: 0 auto -30px;
+    margin: 0 -33px -20px;
   }
 }
 
@@ -325,10 +325,10 @@
   }
 
   .wewontcharge__circles-wrapper {
-    width: 300px;
-    height: 300px;
+    width: 440px;
+    height: 440px;
     transform: scale(0.72);
     transform-origin: center center;
-    margin: -50px auto -85px;
+    margin: -50px -70px -60px;
   }
 }
