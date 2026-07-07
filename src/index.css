@@ -1,0 +1,196 @@
+/* ==========================================
+   GLOBAL STYLES — The Free Website Guys
+   ========================================== */
+
+/* CSS Variables */
+:root {
+  --color-primary: #955ae8;
+  --color-secondary: #fdb226;
+  --color-dark: #21103a;
+  --color-text: #21103a;
+  --color-text-light: #4b4f58;
+  --color-white: #ffffff;
+  --color-light-bg: #f9f7fc;
+  --color-dark-bg: #21103a;
+  --color-green: #23a455;
+  --color-blue: #4054b2;
+
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Poppins', 'ITCAvantGardeStd-Md', sans-serif;
+
+  --max-width: 1114px;
+  --section-padding: 80px 0;
+
+  --shadow-card: 0px 18px 40px 0px rgba(0, 0, 0, 0.07);
+  --shadow-button: 0px 10px 18px 0px rgba(253, 178, 38, 0.22);
+  --shadow-button-hover: 0px 10px 18px 0px rgba(149, 90, 232, 0.31);
+  --radius-button: 50px;
+  --radius-card: 15px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+h1 { font-size: 75px; letter-spacing: 0.02em; line-height: 1em; }
+h2 { font-size: 52px; letter-spacing: 0.02em; }
+h3 { font-size: 34px; letter-spacing: 0.02em; }
+h4 { font-size: 24px; letter-spacing: 0.12em; }
+
+p {
+  margin-bottom: 15px;
+  color: var(--color-text-light);
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 36px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: var(--radius-button);
+  cursor: pointer;
+  box-shadow: var(--shadow-button);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  box-shadow: var(--shadow-button-hover);
+  transform: translateY(-2px);
+}
+
+/* Star ratings */
+.stars {
+  display: inline-flex;
+  gap: 0;
+  color: var(--color-secondary);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.stars i {
+  font-style: normal;
+}
+
+/* Section utility */
+.section-light-bg {
+  background-color: var(--color-light-bg);
+}
+
+/* Responsive typography */
+@media (max-width: 1024px) {
+  h1 { font-size: 50px; }
+  h2 { font-size: 40px; }
+}
+
+@media (max-width: 767px) {
+  h1 { font-size: 38px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 28px; }
+
+  .btn-primary {
+    font-size: 15px;
+    padding: 14px 24px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* MyHAI Global Logo */
+.myhai-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: var(--font-heading);
+}
+
+.myhai-logo__circle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(149, 90, 232, 0.3);
+}
+
+.myhai-logo__rocket {
+  font-size: 18px;
+  transform: rotate(45deg);
+  display: inline-block;
+  line-height: 1;
+}
+
+.myhai-logo__text {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.myhai-logo__text span {
+  color: var(--color-secondary);
+}

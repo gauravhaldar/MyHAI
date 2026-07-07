@@ -1,0 +1,182 @@
+.hero {
+  background-color: var(--color-dark-bg);
+  background-image: url('https://thefreewebsiteguys.com/wp-content/uploads/2022/11/bg1-1.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 0 60px 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.hero__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+.hero__logo {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.hero__logo img {
+  width: 145px;
+  margin: 0 auto;
+}
+
+/* Rating Badge */
+.hero__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hero__laurel {
+  width: 35px;
+  height: auto;
+}
+
+.hero__rating-content {
+  text-align: center;
+}
+
+.hero__rating-link {
+  color: var(--color-white);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero__rating-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.hero__star-icons {
+  color: var(--color-secondary);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.hero__rating-divider {
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+.hero__clutch-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Title */
+.hero__title {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1em;
+  padding: 10px 0;
+  max-width: 900px;
+}
+
+.hero__highlight {
+  color: var(--color-secondary);
+  font-style: italic;
+}
+
+/* CTA */
+.hero__cta {
+  margin: 30px 0 40px;
+  text-align: center;
+}
+
+/* Carousel */
+.hero__carousel {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0px 12px 50px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 3;
+}
+
+.hero__swiper {
+  border-radius: 40px;
+}
+
+.hero__slide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 40px;
+}
+
+.hero__swiper .swiper-button-prev,
+.hero__swiper .swiper-button-next {
+  color: var(--color-dark);
+  width: 36px;
+  height: 36px;
+}
+
+.hero__swiper .swiper-button-prev::after,
+.hero__swiper .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: auto;
+    padding-bottom: 40px;
+    background-size: 60%;
+  }
+
+  .hero__title {
+    font-size: 34px;
+    padding: 10px 0;
+  }
+
+  .hero__title br {
+    display: none;
+  }
+
+  .hero__carousel {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  .hero__slide-img {
+    border-radius: 20px;
+  }
+
+  .hero__swiper {
+    border-radius: 20px;
+  }
+
+  .hero__rating {
+    font-size: 12px;
+  }
+}

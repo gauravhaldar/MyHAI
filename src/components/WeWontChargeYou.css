@@ -1,0 +1,377 @@
+/* WeWontChargeYou.css */
+
+.wewontcharge {
+  padding: var(--section-padding);
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.wewontcharge__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Column styling */
+.wewontcharge__text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.wewontcharge__heading {
+  font-size: 52px;
+  color: var(--color-dark);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.wewontcharge__highlight {
+  color: var(--color-primary);
+}
+
+.wewontcharge__description p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+}
+
+.wewontcharge__description p:last-child {
+  margin-bottom: 0;
+}
+
+.wewontcharge__underline {
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-weight: 600;
+}
+
+.wewontcharge__cta-wrapper {
+  margin-top: 10px;
+}
+
+/* Right Column: Visual area with concentric circles and badges */
+.wewontcharge__visual-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wewontcharge__circles-wrapper {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Concentric dashed background circles */
+.wewontcharge__circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(33, 16, 60, 0.12);
+  pointer-events: none;
+}
+
+.wewontcharge__circle--outer {
+  width: 440px;
+  height: 440px;
+}
+
+.wewontcharge__circle--inner {
+  width: 360px;
+  height: 360px;
+}
+
+/* Badges styling */
+.wewontcharge__badge {
+  position: absolute;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(33, 16, 60, 0.08);
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+.wewontcharge__badge:hover {
+  transform: translateY(-3px);
+}
+
+/* 1. Happy Clients Bubble */
+.wewontcharge__badge--clients {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  left: -20px;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(33, 16, 60, 0.05);
+}
+
+.wewontcharge__badge-num {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.1;
+  font-family: var(--font-body);
+}
+
+.wewontcharge__badge-label {
+  font-size: 9px;
+  line-height: 1.2;
+  color: var(--color-text-light);
+  margin-top: 4px;
+}
+
+/* 2. Rocket Badge */
+.wewontcharge__badge--rocket {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  right: 15px;
+  top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(149, 90, 232, 0.35);
+}
+
+.wewontcharge__rocket-icon {
+  font-size: 20px;
+  transform: rotate(45deg);
+}
+
+/* 3. Clutch Rating Badge */
+.wewontcharge__badge--clutch {
+  right: -25px;
+  bottom: -15px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(33, 16, 60, 0.05);
+}
+
+.wewontcharge__clutch-logo-text {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--color-dark);
+  letter-spacing: -0.03em;
+}
+
+.wewontcharge__clutch-stars {
+  color: var(--color-secondary);
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+/* Main Order Slip Card styling */
+.wewontcharge__order-slip {
+  position: relative;
+  background-color: var(--color-white);
+  width: 320px;
+  padding: 28px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(33, 16, 60, 0.05);
+  box-shadow: 0 20px 50px rgba(33, 16, 60, 0.09);
+  z-index: 2;
+  font-family: var(--font-body);
+}
+
+.wewontcharge__order-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid rgba(33, 16, 60, 0.1);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+.wewontcharge__order-title,
+.wewontcharge__order-price-label {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--color-dark);
+}
+
+.wewontcharge__order-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.wewontcharge__item-name {
+  color: var(--color-text-light);
+}
+
+.wewontcharge__item-price {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.wewontcharge__order-row--subtotal {
+  border-top: 1px solid rgba(33, 16, 60, 0.05);
+  padding-top: 14px;
+  margin-top: 8px;
+}
+
+.wewontcharge__order-row--subtotal .wewontcharge__item-name,
+.wewontcharge__order-row--subtotal .wewontcharge__item-price {
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.wewontcharge__order-row--offer {
+  color: var(--color-green);
+  margin-bottom: 18px;
+}
+
+.wewontcharge__order-row--offer .wewontcharge__item-name,
+.wewontcharge__order-row--offer .wewontcharge__item-price {
+  font-weight: 700;
+  color: var(--color-green);
+}
+
+.wewontcharge__order-row--total {
+  border-top: 2px solid var(--color-dark);
+  padding-top: 18px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.wewontcharge__total-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+
+.wewontcharge__total-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-dark);
+}
+
+/* ==========================================
+   Responsive Breakpoints
+   ========================================== */
+
+@media (max-width: 1024px) {
+  .wewontcharge__grid {
+    gap: 40px;
+  }
+  
+  .wewontcharge__heading {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wewontcharge {
+    padding: 60px 0;
+  }
+
+  .wewontcharge__grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .wewontcharge__description p {
+    font-size: 16px;
+  }
+
+  .wewontcharge__cta-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wewontcharge__visual-col {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wewontcharge__circles-wrapper {
+    width: 320px;
+    height: 320px;
+  }
+
+  .wewontcharge__circle--outer {
+    width: 320px;
+    height: 320px;
+  }
+
+  .wewontcharge__circle--inner {
+    width: 260px;
+    height: 260px;
+  }
+
+  .wewontcharge__order-slip {
+    width: 260px;
+    padding: 20px 16px;
+  }
+
+  .wewontcharge__badge--clients {
+    width: 85px;
+    height: 85px;
+    left: -15px;
+    top: 15px;
+  }
+  
+  .wewontcharge__badge-num {
+    font-size: 16px;
+  }
+  
+  .wewontcharge__badge-label {
+    font-size: 8px;
+    margin-top: 2px;
+  }
+
+  .wewontcharge__badge--rocket {
+    width: 38px;
+    height: 38px;
+    right: 5px;
+    top: 45px;
+  }
+
+  .wewontcharge__rocket-icon {
+    font-size: 16px;
+  }
+
+  .wewontcharge__badge--clutch {
+    right: -15px;
+    bottom: 45px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+
+  .wewontcharge__clutch-logo-text {
+    font-size: 16px;
+  }
+
+  .wewontcharge__clutch-stars {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .wewontcharge__total-price {
+    font-size: 20px;
+  }
+}

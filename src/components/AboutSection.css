@@ -1,0 +1,129 @@
+.about {
+  padding: 0 0 100px;
+  overflow: hidden;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__image-col {
+  position: relative;
+}
+
+.about__image-wrapper {
+  background-image: url('https://thefreewebsiteguys.com/wp-content/uploads/2022/11/bg2.jpg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding: 0 18px 13px 70px;
+  text-align: right;
+  position: relative;
+}
+
+.about__screenshot {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 490px;
+}
+
+.about__badge {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.about__badge-img {
+  width: 64%;
+  max-width: 275px;
+}
+
+.about__badge-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.about__text-col {
+  padding-left: 40px;
+}
+
+.about__eyebrow {
+  color: var(--color-primary);
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.about__heading {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+.about__heading strong {
+  font-weight: 700;
+}
+
+.about__description {
+  margin-bottom: 30px;
+}
+
+.about__description p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .about__heading {
+    font-size: 40px;
+  }
+
+  .about__text-col {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about__image-wrapper {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .about__text-col {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about__heading {
+    font-size: 32px;
+  }
+
+  .about__heading br {
+    display: none;
+  }
+
+  .about__badge {
+    display: none;
+  }
+
+  .about__eyebrow {
+    font-size: 20px;
+  }
+}

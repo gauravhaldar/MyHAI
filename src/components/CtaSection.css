@@ -1,0 +1,48 @@
+.cta-section {
+  background-color: var(--color-dark-bg);
+  background-image: url('https://thefreewebsiteguys.com/wp-content/uploads/2022/11/bg3.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+}
+
+.cta-section__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cta-section__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-section__heading {
+  color: var(--color-white);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.cta-section__heading strong {
+  font-weight: 700;
+}
+
+.cta-section__text {
+  color: var(--color-white);
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-primary--light {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+@media (max-width: 767px) {
+  .cta-section {
+    padding: 60px 0;
+  }
+}
