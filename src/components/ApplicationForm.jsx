@@ -176,7 +176,6 @@ export default function ApplicationForm({ onClose }) {
       <div className="app-form__success">
         <div className="app-form__success-logo">
           <img src={haiLogo} alt="MyHAI Logo" className="myhai-logo-img" style={{ height: '60px', width: 'auto' }} />
-          <span className="myhai-logo__text" style={{ fontSize: '36px', color: 'var(--color-dark)' }}>MY<span>HAI</span></span>
         </div>
         <div className="app-form__success-icon">✓</div>
         <h2>Thank you, {firstName}!</h2>
@@ -193,7 +192,6 @@ export default function ApplicationForm({ onClose }) {
       <div className="app-form__left">
         <div className="app-form__mobile-branding">
           <img src={haiLogo} alt="MyHAI Logo" className="app-form__mobile-logo-img" />
-          <span className="myhai-logo__text">MY<span>HAI</span></span>
         </div>
         <div className="app-form__content">
           
@@ -388,7 +386,6 @@ export default function ApplicationForm({ onClose }) {
         {/* Floating MYHAI Branding inside right section */}
         <div className="app-form__right-branding">
           <img src={haiLogo} alt="MyHAI Logo" className="app-form__right-logo" />
-          <span className="myhai-logo__text">MY<span>HAI</span></span>
         </div>
 
         {/* Testimonial Content */}

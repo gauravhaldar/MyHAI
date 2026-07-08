@@ -30,7 +30,6 @@ export default function Hero({ onApplyClick }) {
         <div className="hero__logo">
           <a href="#" className="myhai-logo">
             <img src={haiLogo} alt="MyHAI Logo" className="myhai-logo-img" />
-            {/* <span className="myhai-logo__text">MY<span>HAI</span></span> */}
           </a>
         </div>
 

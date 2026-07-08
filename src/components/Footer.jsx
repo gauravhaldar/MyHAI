@@ -41,7 +41,6 @@ export default function Footer({ onPrivacyClick }) {
           <div className="footer__brand">
             <a href="#" className="myhai-logo" style={{ marginBottom: '20px' }}>
               <img src={haiLogo} alt="MyHAI Logo" className="myhai-logo-img" />
-              {/* <span className="myhai-logo__text">MY<span>HAI</span></span> */}
             </a>
             <p className="footer__tagline">
               We build professional websites. The highest rated website-building service in India.
